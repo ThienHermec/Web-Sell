@@ -10,6 +10,13 @@ html {
     font-size: 62.5%;
 }
 
+/* fix bug */
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 1.6rem;
     font-family: "Poppins";
@@ -56,7 +63,7 @@ a {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: calc(100vh - 90px);
     background-color: #e6f0ff;
 }
 
