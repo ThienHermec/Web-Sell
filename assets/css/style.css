@@ -52,8 +52,10 @@ a {
 
 /* Header */
 
-header.header {
+.hero-wrap {
     position: relative;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     background-color: #e6f0ff;
 }
@@ -61,7 +63,18 @@ header.header {
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    /* padding-top: 38px; */
+    padding: 12px 0;
+}
+
+/* fix bug header */
+
+.fixed-header {
+    background-color: #e6f0ff;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
 }
 
 /* Navbar ul */
